@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let j = [
+        {
+          "name": "vijay",
+          "age": 23,
+          "gender": "male",
+        },
+        {
+          "name": "ammu",
+          "age": 23,
+          "gender": "female",
+          "nickname": "cutee",
+        },
+        {
+          "name": "lomi",
+          "age": 24,
+          "gender": "male",
+        },
+      ];
+      //using for looping
+      for (let i = 0; i < j.length; i++) {
+        let v = j[i];
+        console.log(v.name);
+        console.log(v.age);
+      }
+      //using forEach looping
+      j.forEach((item) => {
+        console.log(item.name);
+      });
+      //for..in looping
+      for (let key in j) {
+        if (j.hasOwnProperty(key)) {
+          console.log(j[key].nickname);
+        }
+      }
+      //for ..of looping
+      let text="";
+      for(let x of j[key].name)
+      {
+        text+=x;
+      }
+      console.log(text);    
+      
+    </script>
+  </body>
+</html>
